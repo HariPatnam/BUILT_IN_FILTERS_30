@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        border: 10px;
+
+    }
+</style>
+<body>
+    <center> <h1 style="font-style: italic;">BUILT IN FILTER </h1>  
+   <h2 style="background-color: blue;"> {{data|upper}}</h2>
+    <h2 style="background-color:cornflowerblue"> {{data|lower}}</h2>
+    <h2 style="background-color:aliceblue"> {{data|capfirst}}</h2>
+    <h2 style="background-color:antiquewhite"> {{data|title}}</h2>
+    <h2 style="background-color:aqua"> {{data|length}}</h2>
+    <h2 style="background-color:chocolate"> {{data|truncatewords:'3'}}</h2>
+    <h2 style="background-color:deeppink"> {{data|truncatechars:'10'}}</h2>
+    <h2 style="background-color:lawngreen"> {{data|slice:'10'}}</h2><br>
+
+    <h2 style="background-color: chartreuse;"> {{dt|date:'j F Y , D h : i s A '}}</h2> <br> 
+
+
+    <h2 style="background-color:tomato"> i have {{c}} cat{{c|pluralize}} </h2>
+
+    <h2 style="background-color:firebrick"> this {{c}} marker {{c|pluralize}} {{c|pluralize:'is,are'}} mine </h2>
+
+    <h2 style="background-color:crimson">LOVE_NYA  {{c|pluralize}} {{c|pluralize:'is,are'}} mine </h2>
+    
+    </center>
+
+</body>
+</html>
